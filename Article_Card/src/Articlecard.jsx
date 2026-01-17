@@ -1,0 +1,46 @@
+import React from 'react';
+import './Articlecard.css';
+
+const ArticleCard = () => {
+  const cardInfo = {
+    title: 'Serene Landscapes of Santorini',
+    date: new Date('2023-06-15'),
+    comments: 42,
+    subTitle: 'Where the Aegean meets the sky.',
+    description:
+      'Santorini, with its iconic white-washed buildings and blue domes, offers breathtaking views of the caldera, stunning sunsets, and a unique volcanic landscape that captivates every visitor.',
+    category: 'travel',
+    imageURL:
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  };
+
+  const formattedDate = cardInfo.date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+
+  return (
+    <div className="card-container">
+      <div className="card-header">
+        <img src={cardInfo.imageURL} alt={cardInfo.title} className="card-image" />
+        <span className="category-badge">{cardInfo.category.toUpperCase()}</span>
+      </div>
+
+      <div className="card-body">
+        <div className="card-meta">
+          <span>📅 {formattedDate}</span>
+          <span>💬 {cardInfo.comments} Comments</span>
+        </div>
+
+        <h2 className="card-title">{cardInfo.title}</h2>
+        <h3 className="card-subtitle">{cardInfo.subTitle}</h3>
+        <p className="card-description">{cardInfo.description}</p>
+        
+        <button className="read-more-btn">Read More</button>
+      </div>
+    </div>
+  );
+};
+
+export default ArticleCard;
