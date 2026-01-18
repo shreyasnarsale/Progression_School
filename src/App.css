@@ -1,0 +1,35 @@
+/* Center the content perfectly in the screen middle */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.button-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.scenario-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.scenario-item span {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
