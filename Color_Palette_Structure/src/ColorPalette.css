@@ -1,0 +1,66 @@
+/* Container that fills the whole display */
+.palette-display-full {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.color-row {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.color-header {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.color-name-main {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  display: block;
+}
+
+.color-variable-name {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* Grid that spans the full width of the screen */
+.shades-grid-full {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 columns for 10 shades */
+  gap: 8px;
+  width: 100%;
+}
+
+.shade-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.swatch-full {
+  height: 55px; /* Adjust height for laptop display */
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.shade-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-family: monospace;
+}
+
+.shade-num {
+  font-weight: bold;
+  color: #4a5568;
+}
+
+.shade-hex-code {
+  color: #a0aec0;
+}
