@@ -1,0 +1,68 @@
+/* Reset defaults for a full white background */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Side-by-side layout container */
+.app-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 50px;
+}
+
+/* Left side button list */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lang-btn {
+  width: 150px;
+  padding: 12px;
+  background-color: white;
+  border: 2px solid #646cff;
+  color: #646cff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.lang-btn.active {
+  background-color: #646cff;
+  color: white;
+}
+
+/* Right side description box */
+.display-area {
+  flex: 1;
+  min-height: 250px;
+  border: 2px solid #646cff;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  text-align: center;
+  max-width: 500px;
+}
