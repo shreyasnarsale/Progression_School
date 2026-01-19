@@ -83,7 +83,8 @@ npm start
 ## 👨‍💻 Author
 
 **Shreyas Narsale**
-GitHub: [https://github.com/shreyasnarsale](https://github.com/shreyasnarsale)
+GitHub:
+[https://github.com/shreyasnarsale](https://github.com/shreyasnarsale)
 
 ---
 
