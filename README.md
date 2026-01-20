@@ -9,15 +9,18 @@ Each project focuses on **specific React concepts** such as components, props, s
 
 ## 📁 Projects Included
 
-| Project Name                             | Description                            |
-| ---------------------------------------- | -------------------------------------- |
-| Article_Card                             | Card-based UI for displaying articles  |
-| Color_Palette_Structure                  | Color palette layout and structure     |
-| News_App                                 | News application UI with components    |
-| Reusable_Button_Component                | Custom reusable button component       |
-| Interactive_Text_Display_on_Button_Click | Text updates using button click events |
-| React_Event_Handling                     | Examples of handling events in React   |
-| Step_Counter_Application                 | Counter app using state and events     |
+| Project Name                             | Description                                     |
+| ---------------------------------------- | ----------------------------------------------- |
+| Article_Card                             | Card-based UI for displaying articles           |
+| Color_Palette_Structure                  | Color palette layout and structure              |
+| News_App                                 | News application UI with components             |
+| Reusable_Button_Component                | Custom reusable button component                |
+| Interactive_Text_Display_on_Button_Click | Text updates using button click events          |
+| React_Event_Handling                     | Examples of handling events in React            |
+| Step_Counter_Application                 | Counter app using state and events              |
+| Timer                                    | Timer application built using React state       |
+| Random_Person_Data_Viewer                | Fetches and displays random user data using API |
+
 
 > 📌 More projects will be added as I continue learning React.
 
