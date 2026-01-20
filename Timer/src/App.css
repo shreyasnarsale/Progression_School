@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stopwatch-screen {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  width: 400px;
+  padding: 50px 40px;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.exit-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #bdc3c7;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.exit-btn:hover {
+  color: #e74c3c;
+}
+
+.main-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.time-box {
+  background: #f8faff;
+  padding: 30px 10px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #edf2f7;
+}
+
+.numbers {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 52px;
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: 1px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 56px;
+}
+
+.action-btn {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.multi-buttons {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Theme Colors */
+.start-theme { background-color: #00d1b2; color: white; }
+.stop-theme { background-color: #ff3860; color: white; }
+.resume-theme { background-color: #3273dc; color: white; }
+.reset-theme { background-color: #7f8c8d; color: white; }
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.05);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}

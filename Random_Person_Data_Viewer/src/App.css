@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.viewport {
+  width: 100vw;
+  min-height: 100vh; 
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0; 
+}
+
+.image-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -65px;
+  overflow: hidden;
+  background: white;
+}
+
+.image-circle img { width: 100%; height: 100%; object-fit: cover; }
+
+.card-body { 
+  padding: 85px 30px 40px 30px; 
+  text-align: center; 
+}
+
+.display-area {
+  margin-bottom: 25px;
+}
+
+.display-label {
+  color: #636e72;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.display-main {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2d3436;
+  word-break: break-all;
+}
+
+.info-list { 
+  list-style: none; 
+  text-align: left;
+  margin-bottom: 30px; 
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.info-item:hover, .info-item.active {
+  background: #f1f3ff;
+}
+
+.info-item.active {
+  background: #f1f3ff;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: #eef2ff;
+  border-radius: 12px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.active .icon-box {
+  background: #6a11cb;
+  color: white;
+}
+
+.text-content {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.get-btn {
+  width: 100%;
+  padding: 16px;
+  background: #4834d4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 10px rgba(72, 52, 212, 0.3);
+}
+
+.get-btn:hover {
+  background: #3c2bb3;
+}
+
+.spinner {
+  width: 50px; height: 50px;
+  border: 5px solid #ddd;
+  border-top-color: #6a11cb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
