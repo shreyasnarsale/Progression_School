@@ -5,6 +5,7 @@ This repository contains a collection of my **React mini projects and applicatio
 
 Each project focuses on **specific React concepts** such as components, props, state, event handling, hooks, and reusable UI patterns.
 
+---
 
 ## 📁 Projects Included
 
